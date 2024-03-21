@@ -1,0 +1,21 @@
+
+
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          azure:
+            issuer-uri: https://login.microsoftonline.com/111111111/v2.0
+        registration:
+          azure-dev:
+            provider: azure
+            client-id: 111111
+            client-secret: 1111111
+            scope:
+            - openid
+            - email
+            - profile
+
+server:
+  port: 9090
